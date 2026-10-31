@@ -1,0 +1,150 @@
+{
+    "data": {
+        "locations": [
+            {
+                "healthieLocationId": "36681",
+                "name": "Anderson",
+                "coordinates": {
+                    "latitude": 39.0710114,
+                    "longitude": -84.310021
+                },
+                "address": {
+                    "city": "Cincinnati",
+                    "postalCode": "45255"
+                }
+            },
+            {
+                "healthieLocationId": "36682",
+                "name": "Aurora",
+                "coordinates": {
+                    "latitude": 41.312073,
+                    "longitude": -81.345406
+                },
+                "address": {
+                    "city": "Aurora",
+                    "postalCode": "44202"
+                }
+            },
+            {
+                "healthieLocationId": "36683",
+                "name": "Centerville",
+                "coordinates": {
+                    "latitude": 39.5908076,
+                    "longitude": -84.2008227
+                },
+                "address": {
+                    "city": "Dayton",
+                    "postalCode": "45458"
+                }
+            },
+            {
+                "healthieLocationId": "36684",
+                "name": "Dublin",
+                "coordinates": {
+                    "latitude": 40.0898086,
+                    "longitude": -83.1310477
+                },
+                "address": {
+                    "city": "Dublin",
+                    "postalCode": "43017"
+                }
+            },
+            {
+                "healthieLocationId": "36685",
+                "name": "Fairfield",
+                "coordinates": {
+                    "latitude": 39.3373958,
+                    "longitude": -84.5388773
+                },
+                "address": {
+                    "city": "Fairfield",
+                    "postalCode": "45014"
+                }
+            },
+            {
+                "healthieLocationId": "36686",
+                "name": "Kenwood",
+                "coordinates": {
+                    "latitude": 39.203635,
+                    "longitude": -84.370476
+                },
+                "address": {
+                    "city": "Cincinnati",
+                    "postalCode": "45236"
+                }
+            },
+            {
+                "healthieLocationId": "36687",
+                "name": "Marion",
+                "coordinates": {
+                    "latitude": 40.5884928,
+                    "longitude": -83.1308035
+                },
+                "address": {
+                    "city": "Marion",
+                    "postalCode": "43302"
+                }
+            },
+            {
+                "healthieLocationId": "36688",
+                "name": "Montgomery",
+                "coordinates": {
+                    "latitude": 39.1894491,
+                    "longitude": -84.4116975
+                },
+                "address": {
+                    "city": "Cincinnati",
+                    "postalCode": "45242"
+                }
+            },
+            {
+                "healthieLocationId": "36689",
+                "name": "Oxford",
+                "coordinates": {
+                    "latitude": 39.50925789996194,
+                    "longitude": -84.74604091697807
+                },
+                "address": {
+                    "city": "Oxford",
+                    "postalCode": "45056"
+                }
+            },
+            {
+                "healthieLocationId": "36690",
+                "name": "Strongsville",
+                "coordinates": {
+                    "latitude": 41.3278087,
+                    "longitude": -81.8369622
+                },
+                "address": {
+                    "city": "Strongsville",
+                    "postalCode": "44136"
+                }
+            },
+            {
+                "healthieLocationId": "36691",
+                "name": "Toledo",
+                "coordinates": {
+                    "latitude": 41.70395240304676,
+                    "longitude": -83.64611231801332
+                },
+                "address": {
+                    "city": "Toledo",
+                    "postalCode": "43623"
+                }
+            },
+            {
+                "healthieLocationId": "36693",
+                "name": "Western Hills",
+                "coordinates": {
+                    "latitude": 39.158819,
+                    "longitude": -84.634467
+                },
+                "address": {
+                    "city": "Cincinnati",
+                    "postalCode": "45248"
+                }
+            }
+        ]
+    }
+}

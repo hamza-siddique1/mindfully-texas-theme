@@ -1,5 +1,8 @@
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/includes/mf-request-form.php'; // Vue JS Form
+
 function elementor_child_enqueue_styles() {
     wp_enqueue_style(
         'parent-style',

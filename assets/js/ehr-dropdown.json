@@ -1,0 +1,720 @@
+{
+    "data": {
+        "services": [
+            {
+                "id": "1",
+                "name": "Individual"
+            },
+            {
+                "id": "2",
+                "name": "Couples"
+            },
+            {
+                "id": "3",
+                "name": "Group"
+            },
+            {
+                "id": "4",
+                "name": "Family"
+            }
+        ],
+        "specialties": [
+            {
+                "name": "I need someone to talk to",
+                "tag": "specialty-i-need-to-talk"
+            },
+            {
+                "name": "Abuse/Trauma/PTSD",
+                "tag": "specialty-abuse-trauma-ptsd"
+            },
+            {
+                "name": "ACT (Acceptance and Commitment Therapy)",
+                "tag": "specialty-act"
+            },
+            {
+                "name": "Addiction (Behavioral or Substance)",
+                "tag": "specialty-addiction"
+            },
+            {
+                "name": "ADHD",
+                "tag": "specialty-adhd"
+            },
+            {
+                "name": "Alternative Sexualities",
+                "tag": "specialty-alternative-sexualities"
+            },
+            {
+                "name": "Anger Management",
+                "tag": "specialty-anger-management"
+            },
+            {
+                "name": "Anxiety/Depression",
+                "tag": "specialty-anxiety-depression"
+            },
+            {
+                "name": "Art Therapy",
+                "tag": "specialty-art-therapy"
+            },
+            {
+                "name": "Attachment-based Therapy",
+                "tag": "specialty-attachment-therapy"
+            },
+            {
+                "name": "Autism",
+                "tag": "specialty-autism"
+            },
+            {
+                "name": "BDSM/Kink/SSC",
+                "tag": "specialty-bdsm-kink-ssc"
+            },
+            {
+                "name": "Behavior Modification/Changes",
+                "tag": "specialty-behavior-modification"
+            },
+            {
+                "name": "Bipolar Disorder",
+                "tag": "specialty-bipolar-disorder"
+            },
+            {
+                "name": "Body Image",
+                "tag": "specialty-body-image"
+            },
+            {
+                "name": "Care Management",
+                "tag": "specialty-care-management"
+            },
+            {
+                "name": "Christian Counseling",
+                "tag": "specialty-christian-counseling"
+            },
+            {
+                "name": "Conflict Resolution",
+                "tag": "specialty-conflict-resolution"
+            },
+            {
+                "name": "Coping with Sexual Trauma",
+                "tag": "specialty-sexual-trauma"
+            },
+            {
+                "name": "Couples' Intimacy Counseling",
+                "tag": "specialty-couples-intimacy"
+            },
+            {
+                "name": "Court Ordered Evaluation",
+                "tag": "specialty-court-ordered-eval"
+            },
+            {
+                "name": "Cultural Concerns",
+                "tag": "specialty-cultural-concerns"
+            },
+            {
+                "name": "DBT - Informed",
+                "tag": "specialty-dbt-informed"
+            },
+            {
+                "name": "DBT - Team",
+                "tag": "specialty-dbt-team"
+            },
+            {
+                "name": "Developmental/Learning Concerns",
+                "tag": "specialty-development-learning-concerns"
+            },
+            {
+                "name": "Dissociative Disorders",
+                "tag": "specialty-dissociative-disorders"
+            },
+            {
+                "name": "Divorce",
+                "tag": "specialty-divorce"
+            },
+            {
+                "name": "Domestic Violence",
+                "tag": "specialty-domestic-violence"
+            },
+            {
+                "name": "Eating Disorders",
+                "tag": "specialty-eating-disorders"
+            },
+            {
+                "name": "EMDR - Eye Movement Desensitization and Reprocessing",
+                "tag": "specialty-emdr"
+            },
+            {
+                "name": "Family Concerns (individual counseling)",
+                "tag": "specialty-family-concerns"
+            },
+            {
+                "name": "FASD (Fetal Alcohol Spectrum Disorder)",
+                "tag": "specialty-fasd"
+            },
+            {
+                "name": "Fertility, Pregnancy & Postpartum",
+                "tag": "specialty-fertility-pregnancy-postpartum"
+            },
+            {
+                "name": "Gender Affirming Care",
+                "tag": "specialty-gender-affirming-care"
+            },
+            {
+                "name": "Gender Dysphoria",
+                "tag": "specialty-gender-dysphoria"
+            },
+            {
+                "name": "Grief Counseling/Bereavement",
+                "tag": "specialty-grief-bereavement"
+            },
+            {
+                "name": "IFS (Internal Family Systems)",
+                "tag": "specialty-ifs"
+            },
+            {
+                "name": "Intellectual disability",
+                "tag": "specialty-intellectual-disability"
+            },
+            {
+                "name": "LGBTQIA (Gender and Sexual Identity)",
+                "tag": "specialty-lgbtqia"
+            },
+            {
+                "name": "Life Changes",
+                "tag": "specialty-life-changes"
+            },
+            {
+                "name": "Mandated Anger Management",
+                "tag": "specialty-mandated-anger-management"
+            },
+            {
+                "name": "Men's concerns",
+                "tag": "specialty-men-concerns"
+            },
+            {
+                "name": "Military/Veterans Concerns",
+                "tag": "specialty-military-vet-concerns"
+            },
+            {
+                "name": "Mood Concerns",
+                "tag": "specialty-mood-concerns"
+            },
+            {
+                "name": "Obsessive-compulsive disorder (OCD)",
+                "tag": "specialty-ocd"
+            },
+            {
+                "name": "Occupational Concerns",
+                "tag": "specialty-occupational-concerns"
+            },
+            {
+                "name": "Pain Management",
+                "tag": "specialty-pain-management"
+            },
+            {
+                "name": "Parenting Concerns/Education",
+                "tag": "specialty-parenting-concerns"
+            },
+            {
+                "name": "Peer Support",
+                "tag": "specialty-peer-support"
+            },
+            {
+                "name": "Personality Disorders",
+                "tag": "specialty-personality-disorders"
+            },
+            {
+                "name": "Phobias",
+                "tag": "specialty-phobias"
+            },
+            {
+                "name": "Play Therapy",
+                "tag": "specialty-play-therapy"
+            },
+            {
+                "name": "Polyamory/CNM",
+                "tag": "specialty-polyamory-cnm"
+            },
+            {
+                "name": "Psychological Testing",
+                "tag": "specialty-psychological-testing"
+            },
+            {
+                "name": "Radically Open Dialectical Behavior Therapy (RO-DBT)",
+                "tag": "specialty-ro-dbt"
+            },
+            {
+                "name": "Reactive Attachment Disorder (RAD)",
+                "tag": "specialty-rad"
+            },
+            {
+                "name": "Relationship Exploration",
+                "tag": "specialty-relationship-exploration"
+            },
+            {
+                "name": "Schizophrenia Disorders",
+                "tag": "specialty-schizophrenia-disorders"
+            },
+            {
+                "name": "School Problems",
+                "tag": "specialty-school-problems"
+            },
+            {
+                "name": "Self Harming/Suicidal Thoughts",
+                "tag": "specialty-self-harm-suicidal-thoughts"
+            },
+            {
+                "name": "Sex Therapy",
+                "tag": "specialty-sex-therapy"
+            },
+            {
+                "name": "Somatic Therapy",
+                "tag": "specialty-somatic-therapy"
+            },
+            {
+                "name": "Somatoform Disorders",
+                "tag": "specialty-somatoform-disorders"
+            },
+            {
+                "name": "Stress Management",
+                "tag": "specialty-stress-management"
+            },
+            {
+                "name": "Surgery/Transition Focused Care",
+                "tag": "specialty-surgery-focused-care"
+            },
+            {
+                "name": "Transpersonal Therapy",
+                "tag": "specialty-transpersonal-therapy"
+            },
+            {
+                "name": "Traumatic Brain Injury/Medical Concerns",
+                "tag": "specialty-traumatic-brain-injury"
+            },
+            {
+                "name": "Treatment for Various Sexual Compulsions",
+                "tag": "specialty-sexual-compulsions"
+            },
+            {
+                "name": "Women's Concerns",
+                "tag": "specialty-womens-concerns"
+            },
+            {
+                "name": "Mandated Substance Use Evaluation",
+                "tag": "specialty-mandated-substance-eval"
+            },
+            {
+                "name": "Mandated Mental Health Evaluation",
+                "tag": "specialty-mandated-mental-health-eval"
+            },
+            {
+                "name": "Anger Management Assessment",
+                "tag": "specialty-anger-management-assess"
+            },
+            {
+                "name": "Couples Counseling",
+                "tag": "specialty-couples-counseling"
+            },
+            {
+                "name": "Family Counseling (Group)",
+                "tag": "specialty-family-counseling"
+            }
+        ],
+        "demographics": [
+            {
+                "id": "1",
+                "name": "Female 18-25",
+                "tag": "demographic-female-18-25"
+            },
+            {
+                "id": "2",
+                "name": "Male 18-25",
+                "tag": "demographic-male-18-25"
+            },
+            {
+                "id": "3",
+                "name": "Male 0-3",
+                "tag": "demographic-male-0-3"
+            },
+            {
+                "id": "4",
+                "name": "Female 0-3",
+                "tag": "demographic-female-0-3"
+            },
+            {
+                "id": "5",
+                "name": "Male 4-8",
+                "tag": "demographic-male-4-8"
+            },
+            {
+                "id": "6",
+                "name": "Female 4-8",
+                "tag": "demographic-female-4-8"
+            },
+            {
+                "id": "7",
+                "name": "Male 9-12",
+                "tag": "demographic-male-9-12"
+            },
+            {
+                "id": "8",
+                "name": "Female 9-12",
+                "tag": "demographic-female-9-12"
+            },
+            {
+                "id": "9",
+                "name": "Male 13-17",
+                "tag": "demographic-male-13-17"
+            },
+            {
+                "id": "10",
+                "name": "Female 13-17",
+                "tag": "demographic-female-13-17"
+            },
+            {
+                "id": "13",
+                "name": "Male 65+",
+                "tag": "demographic-male-65-older"
+            },
+            {
+                "id": "14",
+                "name": "Female 65+",
+                "tag": "demographic-female-65-older"
+            },
+            {
+                "id": "12",
+                "name": "Female 26-64",
+                "tag": "demographic-female-26-64"
+            },
+            {
+                "id": "11",
+                "name": "Male 26-64",
+                "tag": "demographic-male-26-64"
+            },
+            {
+                "id": "15",
+                "name": "Male 5-7",
+                "tag": "demographic-male-5-7"
+            },
+            {
+                "id": "16",
+                "name": "Female 5-7",
+                "tag": "demographic-Female 5-7"
+            }
+        ],
+        "insurancePlans": [
+            {
+                "id": "019df501-ac4a-7051-ad75-4a153848460d",
+                "payerName": "Aetna"
+            },
+            {
+                "id": "019ff60f-4cf7-70d3-b63d-aa98aa88d779",
+                "payerName": "Aetna Better Health of Ohio"
+            },
+            {
+                "id": "01a03c02-f05d-7461-9417-2f9874f456b5",
+                "payerName": "Aetna Cleveland Clinic"
+            },
+            {
+                "id": "01a05d57-8d9d-7677-9c6a-2beea3e6e9be",
+                "payerName": "Aetna EAP"
+            },
+            {
+                "id": "01a03c02-f549-7113-9047-44c9e7f06a89",
+                "payerName": "Aetna Medicare"
+            },
+            {
+                "id": "019ff60f-4cfa-7321-8d78-8493e9ecca98",
+                "payerName": "Aetna Ohio Rise Medicaid"
+            },
+            {
+                "id": "01a05d57-8da9-7025-a8f2-ab63a091756f",
+                "payerName": "Allied Benefits Systems - Aetna"
+            },
+            {
+                "id": "01a05d57-8dac-7017-a2b6-dc9cbed45d80",
+                "payerName": "Allied Benefits Systems - Anthem"
+            },
+            {
+                "id": "01a05d57-8daf-729d-97c0-b59138bd0a93",
+                "payerName": "Allied Benefits Systems - Cigna"
+            },
+            {
+                "id": "019ff60f-4cfd-776c-ba4b-1e197c5fbeb3",
+                "payerName": "Ambetter from Buckeye Community Health Plan"
+            },
+            {
+                "id": "019ff60f-4d00-751f-879d-e369377c9b51",
+                "payerName": "Amerihealth Caritas Ohio Medicaid"
+            },
+            {
+                "id": "019fce25-f069-70bd-9255-4971ca5399d7",
+                "payerName": "Anthem BCBS"
+            },
+            {
+                "id": "01a05d57-8dbd-74e2-b556-5cd308a6510a",
+                "payerName": "Anthem BCBS Ohio MyCare Dual"
+            },
+            {
+                "id": "01a05d57-8dc0-70b8-8b7e-98f7a83a13f6",
+                "payerName": "Anthem EAP"
+            },
+            {
+                "id": "019ff60f-4d0b-710b-a80e-80f32031a4da",
+                "payerName": "Anthem Ohio Medicaid"
+            },
+            {
+                "id": "019f3a4e-12f5-71fe-a983-15967e878df8",
+                "payerName": "Anthem OH Medicare"
+            },
+            {
+                "id": "01a05d57-8dcb-7036-b21d-b5d752988860",
+                "payerName": "Assured Benefits Administrators"
+            },
+            {
+                "id": "01a05d57-8dcf-7432-986d-21b792a71084",
+                "payerName": "Beacon/Carelon EAP"
+            },
+            {
+                "id": "01a05d57-8dd3-772e-b28c-6b68a4696b6b",
+                "payerName": "Behavioral Health Systems"
+            },
+            {
+                "id": "01a05d57-8dd6-76f9-b15b-ca91677c61e4",
+                "payerName": "Benefit Plan Administrators"
+            },
+            {
+                "id": "01a05d57-8dda-7376-b8ce-d31e132605c5",
+                "payerName": "Bind Health - Surest"
+            },
+            {
+                "id": "019ff60f-4d0e-76e3-881d-090f088ee391",
+                "payerName": "Buckeye Ohio Medicaid"
+            },
+            {
+                "id": "01a03c02-fc2e-760d-a631-fcb6222efa5b",
+                "payerName": "Buckeye Ohio MyCare Dual"
+            },
+            {
+                "id": "019f3a4e-12f7-75ee-b71d-62ad5b91ae38",
+                "payerName": "Carelon Behavioral Health"
+            },
+            {
+                "id": "01a05d57-8dee-76a0-b4b0-a81764a82239",
+                "payerName": "CareSource Medicare"
+            },
+            {
+                "id": "01a05d57-8df5-747e-b69f-37dd4e7debff",
+                "payerName": "CareSource Ohio Marketplace"
+            },
+            {
+                "id": "019f3a4e-12f9-74b3-a380-2106c4784cb0",
+                "payerName": "CareSource Ohio Medicaid"
+            },
+            {
+                "id": "01a05d57-8e01-7293-a88b-7af8b15a9cd3",
+                "payerName": "CareSource Ohio MyCare Dual"
+            },
+            {
+                "id": "01a05d57-8e08-747e-b1f4-5c4886215fd5",
+                "payerName": "CHAMPVA - HAC"
+            },
+            {
+                "id": "01a05d57-8e0c-77b5-a3f8-ab9c00cbd542",
+                "payerName": "Christian Care Ministries (MediShare)"
+            },
+            {
+                "id": "019f3a4e-12fc-719e-897f-d1013377379c",
+                "payerName": "Cigna"
+            },
+            {
+                "id": "01a03c02-fb02-712d-95e4-b9e3834dd74f",
+                "payerName": "Cigna Behavioral Health"
+            },
+            {
+                "id": "01a05d57-8e18-75ab-b810-fb910e2c7a21",
+                "payerName": "Cigna EAP"
+            },
+            {
+                "id": "01a05d57-8e1d-77e7-b54e-3b8bbec5b803",
+                "payerName": "Cigna HealthSpring"
+            },
+            {
+                "id": "01a03c02-f574-707c-8b2b-13f330545268",
+                "payerName": "Cigna Medicare"
+            },
+            {
+                "id": "01a05d57-8e29-7566-abe0-5a3d6617fead",
+                "payerName": "ComPsych"
+            },
+            {
+                "id": "01a043bc-79e7-7298-b91c-b4d77cf9fe84",
+                "payerName": "Curative Health Plan"
+            },
+            {
+                "id": "01a05d57-8e2c-70b6-b0b2-36ffaaf290c5",
+                "payerName": "Custom Design Benefits, Inc."
+            },
+            {
+                "id": "01a05d57-8e30-770f-9d9f-1a0566a03953",
+                "payerName": "Devoted Health"
+            },
+            {
+                "id": "01a05d57-8e34-70d7-acbd-d356e58b1c83",
+                "payerName": "EAP - Optum/UHC"
+            },
+            {
+                "id": "01a05d57-8e37-778a-8d03-5de1a446225a",
+                "payerName": "EmblemHealth"
+            },
+            {
+                "id": "01a05d57-8e3b-72af-9807-8184154593e1",
+                "payerName": "Government Employees Hospital Association (GEHA)"
+            },
+            {
+                "id": "01a03c02-f9ee-7447-878f-d5d83e0320d1",
+                "payerName": "Humana"
+            },
+            {
+                "id": "01a03c02-f577-77a5-aadc-58cfa61d4a58",
+                "payerName": "Humana Medicare"
+            },
+            {
+                "id": "019ff60f-4d17-71e3-82ad-9c815e630d28",
+                "payerName": "Humana Ohio Medicaid"
+            },
+            {
+                "id": "01a05d57-8e4f-74d0-8692-de663d6008f0",
+                "payerName": "Imagine360 Administrators (GPA)"
+            },
+            {
+                "id": "01a05d57-8e5a-7170-87d0-65c9fc7e8cc9",
+                "payerName": "Magellan Behavioral Health Services"
+            },
+            {
+                "id": "01a05d57-8e63-75a5-8e9a-e05160838c30",
+                "payerName": "MedBen"
+            },
+            {
+                "id": "019ff60f-4d19-7509-a30d-7fa26146f2bf",
+                "payerName": "Medicaid of Ohio"
+            },
+            {
+                "id": "01a03c02-fb1b-70f1-a38d-f7e7f40ad786",
+                "payerName": "Medical Mutual Medicare"
+            },
+            {
+                "id": "01a03c02-ec11-7035-9901-8f69ec9db95a",
+                "payerName": "Medical Mutual of Ohio"
+            },
+            {
+                "id": "01a03c02-f59d-74a8-b6fd-6bdf6386112b",
+                "payerName": "Medicare Ohio"
+            },
+            {
+                "id": "01a05d57-8e7a-76e4-9022-1ffafa79e538",
+                "payerName": "Meritain Health"
+            },
+            {
+                "id": "01a05d57-8e7f-7630-8ea0-8abf18c7919b",
+                "payerName": "Military One Source EAP"
+            },
+            {
+                "id": "01a05d57-8e82-7514-ae9e-c5ec8d91f1bb",
+                "payerName": "MMO-Custom Design Benefits"
+            },
+            {
+                "id": "01a05d57-8e86-7413-9591-a502b717917d",
+                "payerName": "Molina HealthCare of Ohio Marketplace"
+            },
+            {
+                "id": "01a03c02-f5a1-747e-90b9-0d48d6a225f9",
+                "payerName": "Molina Medicare of Ohio"
+            },
+            {
+                "id": "019ff60f-4d1c-771f-8471-9bad50ca7095",
+                "payerName": "Molina Ohio Medicaid"
+            },
+            {
+                "id": "01a05d57-8e92-7194-af37-0475df415d33",
+                "payerName": "Molina Ohio MyCare Dual"
+            },
+            {
+                "id": "01a05d57-8e96-7654-b6d1-524464db3793",
+                "payerName": "Mutual Health Services"
+            },
+            {
+                "id": "01a05d57-8e9a-7340-8320-49ada6217faf",
+                "payerName": "OhioHealth EAP"
+            },
+            {
+                "id": "01a05d57-8e9e-743c-9adf-4c161c82f58e",
+                "payerName": "Ohio Healthy (Florida Hospital Waterman)"
+            },
+            {
+                "id": "01a05d57-8ea2-7146-975e-3fbcc1055cb3",
+                "payerName": "Oscar Health"
+            },
+            {
+                "id": "01a05d57-8ea5-7393-b78b-a612c83d8553",
+                "payerName": "Paramount Health Care"
+            },
+            {
+                "id": "01a05d57-8ea9-7502-aefc-18b83bcb7d37",
+                "payerName": "PHCS/Multiplan"
+            },
+            {
+                "id": "01a05d57-8ead-74de-a8f8-53485209c8dd",
+                "payerName": "Sana Benefits"
+            },
+            {
+                "id": "019f28b5-c4b9-7130-a47b-21593cb76428",
+                "payerName": "Self-Pay"
+            },
+            {
+                "id": "01a03c02-f9ff-722f-9cb6-560ec48dcfd1",
+                "payerName": "Student Resources (UnitedHealthcare)"
+            },
+            {
+                "id": "01a05d57-8eb9-745c-bb44-290db6408d52",
+                "payerName": "Summacare Health Plan (HMO)"
+            },
+            {
+                "id": "01a03c02-fc6c-7648-9c17-39247d33cb2e",
+                "payerName": "Tricare East Region"
+            },
+            {
+                "id": "01a03c02-fa02-70ff-b408-d6a845707110",
+                "payerName": "UMR"
+            },
+            {
+                "id": "01a03c02-fa09-7695-a20d-4b79cc9bc447",
+                "payerName": "United HealthCare"
+            },
+            {
+                "id": "01a01b9c-6ccf-7205-812b-f7213a9c98a5",
+                "payerName": "United HealthCare Community Plan Ohio Medicaid"
+            },
+            {
+                "id": "01a03c02-fb37-7059-97c7-7d015a0512be",
+                "payerName": "United HealthCare Dual Medicare/Medicaid"
+            },
+            {
+                "id": "01a03c02-f5ad-7208-9e04-d7d7da37528d",
+                "payerName": "United HealthCare Medicare"
+            },
+            {
+                "id": "01a05d57-8ed9-72a8-89b9-7d57333980b1",
+                "payerName": "United HealthCare Shared Services (UHSS)"
+            },
+            {
+                "id": "01a03c02-fc7e-74c5-a0aa-3787abce9e3f",
+                "payerName": "United Medical Resources"
+            },
+            {
+                "id": "01a03c02-fc81-7205-a6bf-24e9b9fab23c",
+                "payerName": "VA Community Care Network Regions 1, 2, & 3"
+            },
+            {
+                "id": "01a03c02-f5af-7796-9ed6-652757e95ef5",
+                "payerName": "WellCare Ohio Medicare (Ambetter)"
+            }
+        ]
+    }
+}

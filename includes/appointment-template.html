@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            justify-content: center;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #411AA8;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width:100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="https://mindfully.com/wp-content/uploads/2025/07/Mindfully-Logo-White-Registered-1-200x53.webp" alt="Mindfully">
+</div>
+
+<div class="table-container">
+    <table>
+        <tr>
+            <td colspan="2" class="centered"><h2>Appointment Summary</h2></td>
+        </tr>
+        <tr>
+            <td><strong>Client Name:</strong></td>
+            <td>{{client_name}}</td>
+        </tr>
+
+        <tr>
+            <td><strong>Therapist Name:</strong></td>
+            <td>{{therapist}}</td>
+        </tr>
+
+        <tr>
+            <td><strong>Date:</strong></td>
+            <td>{{appointment_date}}</td>
+        </tr>
+        <tr>
+            <td><strong>Time:</strong></td>
+            <td>{{appointment_time}}</td>
+        </tr>
+
+        <!-- BEGIN_REMINDER -->
+        <tr>
+            <td colspan="2">
+            <p >Reminder: <strong>First Appointment for Children and Teens (Under 18):</strong></p>
+            <p >A parent or legal guardian is required to be present for the minor’s initial appointment.</p>
+            </td>
+        </tr>
+        <!-- END_REMINDER -->
+
+        <!-- BEGIN_TELETHERAPY_WORDING -->
+        <tr>
+            <td colspan="2">
+                <p><strong>This is a teletherapy appointment.</strong> You will receive a link to your therapist’s virtual meeting room shortly.</p>
+                <p >At the time of your appointment, please join the session from a private, quiet space with a reliable Wi-Fi connection, using a computer, tablet, or smartphone with a camera.</p>
+            </td>
+        </tr>
+        <!-- END_TELETHERAPY_WORDING -->
+
+        <!-- BEGIN_LOCATION -->
+        <tr>
+            <td><strong>Location:</strong></td>
+            <td>{{location}}</td>
+        </tr>
+        <!-- END_LOCATION -->
+        <tr>
+            <td colspan="2" class="footer-note">
+                If you need to cancel or reschedule, please call <strong>888-718-8148</strong>.
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
