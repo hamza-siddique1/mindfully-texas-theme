@@ -63,5 +63,3 @@ add_filter( 'jet-smart-filters/query/final-query', function( $query ) {
 
     return $query;
 } );
-
-//
