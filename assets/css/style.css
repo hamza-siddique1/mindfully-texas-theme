@@ -1,11 +1,11 @@
 /* --- Base Variables & Reduced Global Styles --- */
 :root {
   /* Colors */
-  --primary-hue: 267;
-  --primary: hsl(var(--primary-hue), 76%, 60%); /* #a855f7 */
-  --primary-light: hsl(var(--primary-hue), 100%, 97.5%);
-  --primary-dark: hsl(var(--primary-hue), 65%, 50%);
-  --primary-text: hsl(var(--primary-hue), 60%, 50%);
+  --primary-hue: 140;
+  --primary: hsl(var(--primary-hue), 92%, 25%); /* #a855f7 */
+  --primary-light: hsl(var(--primary-hue), 60%, 96%);
+  --primary-dark: hsl(var(--primary-hue), 92%, 19%);
+  --primary-text: hsl(var(--primary-hue), 92%, 25%);
 
   --text-dark: hsl(220, 18%, 25%);
   --text-medium: hsl(220, 18%, 25%);
@@ -1280,7 +1280,7 @@ border-color var(--transition-std) !important, color var(--transition-std) !impo
 }
 .gradient-icon {
   display: inline-block;
-  background: linear-gradient(45deg, #411AA8, #78AAFF);
+  background: linear-gradient(45deg, #057D2D, #3FB6A8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

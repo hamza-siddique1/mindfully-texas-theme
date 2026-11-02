@@ -338,8 +338,7 @@ function mf_group_slots_with_clinicians(array $slots, array $clinicians): array 
 function call_healthy_api($key, $payload = [], $method = 'POST') {
 
     $endpoints = [
-        // 'fetch_slots' => $_ENV['HEALTHY_BASE_URL'] . '/matching/slots'
-        'fetch_slots' => 'http://localhost:3005/ehr-providers.json'
+        'fetch_slots' => $_ENV['HEALTHY_BASE_URL'] . '/matching/slots'
     ];
 
     if (!isset($endpoints[$key])) {
