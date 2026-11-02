@@ -16,9 +16,9 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style(
       'mf-style',
         get_stylesheet_directory_uri() . '/assets/css/style.css',
-      array(),
+      array('elementor-frontend'),
       filemtime(get_stylesheet_directory() . '/assets/css/style.css'),
-      false
+      'all'
     );
 
     wp_enqueue_script(
@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts', function () {
         'orgId' => $_ENV['HEALTHY_ORGANIZATION_ID'],
     ]);
   }
-});
+}, 9999);
 
 add_action('rest_api_init', function () {
     register_rest_route('api/v1', '/proxy', [

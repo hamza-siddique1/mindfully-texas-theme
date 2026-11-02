@@ -718,7 +718,7 @@ const app = createApp({
       // if (!this.clientInfo.insuredRelationship) errors.insuredRelationship = "Relationship to insured is required.";
       // if (!this.clientInfo.address1) errors.address1 = "Address 1 is required.";
       // if (!this.clientInfo.city) errors.city = "City is required.";
-      if (!this.stateName) errors.state = "State is required.";
+      // if (!this.stateName) errors.state = "State is required.";
       if (!this.clientInfo.birthDate || this.age < 3) errors.birthDate = "Birth date is required.";
       if (!this.clientInfo.gender) errors.gender = "Gender is required.";
 

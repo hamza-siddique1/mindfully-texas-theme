@@ -136,7 +136,7 @@ get_header();
 
       </div>
       <hr class="mf-form-divider" />
-      <p class="mf-subtitle">On the next screen, you'll be asked to confirm your appointment selection and contact information. To complete your appointment, we also ask that you keep a credit card on file.</p>
+      <p class="mf-subtitle">On the next screen, you'll be asked to confirm your appointment selection and contact information.</p>
 
     </div>
     <!-- End of Step 6 -->
