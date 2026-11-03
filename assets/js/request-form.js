@@ -1637,10 +1637,10 @@ const app = createApp({
         provider_id: slot.healthieProviderId,
         appt_type_id: slot.appointmentTypeId,
         contact_type: contactType,
-        organizatino_id: window.mf_data.orgId,
+        organization_id: window.mf_data.orgId,
         appt_loc_id: apptLocId,
         start_range: startRange,
-        primary_color: '6c37ff',
+        primary_color: '007A2D',
         read_only: true,
       };
 

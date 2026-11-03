@@ -247,8 +247,8 @@ function mf_fetch_locations_from_healthy_graphql() {
 }
 
 function mf_get_locations() {
-    $fresh_key = 'mf_locations_fresh2';
-    $stale_key = 'mf_locations_stale2';
+    $fresh_key = 'mf_locations_fresh';
+    $stale_key = 'mf_locations_stale';
 
     $cached = get_transient($fresh_key);
     if ($cached !== false) {
