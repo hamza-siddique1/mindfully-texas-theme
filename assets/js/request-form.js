@@ -158,6 +158,11 @@ const app = createApp({
       age: 0,
       fullNameManuallyEdited: false,
       clientInfoErrors: {},
+      referral: {
+        isProfessional: "",
+        organization: "",
+        referrerName: "",
+      },
       insurerInfo: {
         firstName: "",
         lastName: "",
@@ -459,6 +464,13 @@ const app = createApp({
       this.updateNextButtonState();
     },
 
+    'referral.isProfessional'(val) {
+      if (val !== 'Yes') {
+        this.referral.organization = '';
+        this.referral.referrerName = '';
+      }
+    },
+
     selectedService(newService) {
       if (newService === 'EMBEDDED') {
         window.location.href = '/psych-services-request-form/';
@@ -625,7 +637,13 @@ const app = createApp({
         location: locationName,
         date: this.getSlotDateTime(slot).date,
         time: this.getSlotDateTime(slot).time,
-        clinician: (clinician?.name || '').split(',')[0].trim()
+        clinician: (clinician?.name || '').split(',')[0].trim(),
+
+        ...({
+          professional_referral: this.referral.isProfessional,
+          referral_organization: this.referral.organization.trim(),
+          referrer_name: this.referral.referrerName.trim(),
+        }),
       };
 
       return fetch(`${mf_data.site_url}/wp-json/api/v1/crm-lead`, {
@@ -721,6 +739,13 @@ const app = createApp({
       // if (!this.stateName) errors.state = "State is required.";
       if (!this.clientInfo.birthDate || this.age < 3) errors.birthDate = "Birth date is required.";
       if (!this.clientInfo.gender) errors.gender = "Gender is required.";
+
+      if (!this.referral.isProfessional) {
+          errors.isProfessionalReferral = "Please select whether this is a professional referral.";
+      } else if (this.referral.isProfessional === 'Yes') {
+          if (!this.referral.organization.trim()) errors.referralOrganization = "Referral organization, company, or agency is required.";
+          if (!this.referral.referrerName.trim()) errors.referrerName = "Referrer name is required.";
+      }
 
       this.clientInfoErrors = errors;
       return Object.keys(this.clientInfoErrors).length === 0;
@@ -1651,7 +1676,7 @@ const app = createApp({
         }
       });
 
-      const url = `https://secure.gethealthie.com/appointments/embed_appt?${params.toString()}`;
+      const url = `https://secure.mindfullyworks.com/appointments/embed_appt?${params.toString()}`;
       window.open(url, "_blank", "noopener");
     },
   },

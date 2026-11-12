@@ -136,6 +136,46 @@ get_header();
 
       </div>
       <hr class="mf-form-divider" />
+
+      <!-- Professional referral -->
+      <div class="mf-referral">
+        <p class="mf-subtitle">Is this a professional referral?<span class="required">*</span></p>
+        <div class="mf-referral-options">
+          <label class="mf-referral-radio">
+            <input type="radio" name="professional_referral" value="Yes" v-model="referral.isProfessional" />
+            <span>Yes</span>
+          </label>
+          <label class="mf-referral-radio">
+            <input type="radio" name="professional_referral" value="No" v-model="referral.isProfessional" />
+            <span>No</span>
+          </label>
+        </div>
+
+        <div class="mf-grid" v-if="referral.isProfessional === 'Yes'">
+          <div class="mf-input-field">
+            <div class="mf-input-wrapper">
+              <i class="fas fa-building mf-input-icon"></i>
+              <input
+                type="text"
+                placeholder="Referral organization, company, or agency *"
+                v-model="referral.organization"
+              />
+            </div>
+          </div>
+          <div class="mf-input-field">
+            <div class="mf-input-wrapper">
+              <i class="fas fa-user-tie mf-input-icon"></i>
+              <input
+                type="text"
+                placeholder="Name of the referrer *"
+                v-model="referral.referrerName"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr class="mf-form-divider" />
+      </div>
       <p class="mf-subtitle">On the next screen, you'll be asked to confirm your appointment selection and contact information.</p>
 
     </div>

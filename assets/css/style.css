@@ -1847,3 +1847,7 @@ span.required {
   justify-content: center;
   margin: 30px 0px 0px 0px;
 }
+
+.mf-referral-options { display: flex; gap: 24px; margin: 8px 0 16px; }
+.mf-referral-radio { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.mf-referral-radio input { width: auto; margin: 0; }
