@@ -29,7 +29,7 @@ get_header();
       <h2 class="mf-title">
         Let's find the right provider for your needs
       </h2>
-      <p class="mf-subtitle prominent-text"><b>This form is for new client scheduling only.</b> To reschedule, cancel, or book additional sessions, please contact your provider directly or call <a href="tel:+18887188148">888-718-8148</a>.</p>
+      <p class="mf-subtitle prominent-text"><b>This form is for new client scheduling only.</b> To reschedule, cancel, or book additional sessions, please contact your provider directly or call <a href="tel:+17372570829">737-257-0829</a>.</p>
       <p class="mf-subtitle">What service are you looking for?<span class="required">*</span></p>
       <div class="mf-counseling-options mf-grid">
         <div

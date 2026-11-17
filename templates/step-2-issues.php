@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="mf-step-2-show-more-btn">
-        <button class="mf-btn mf-btn-outline-primary mf-action-button" @click="toggleShowAll" v-if="!showAll">Show More</button>
+        <button class="mf-btn mf-btn-outline-primary mf-action-button" @click="toggleShowAll" v-if="showAll">Show More</button>
     </div>
 
 </div>

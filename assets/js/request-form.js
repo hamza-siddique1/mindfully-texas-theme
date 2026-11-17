@@ -107,7 +107,7 @@ const app = createApp({
         { id: "COUPLE", name: "Couples Counseling" },
         { id: "FAMILY", name: "Family Counseling" },
         // { id: "GROUP", name: "Group Counseling" },
-        { id: "EMBEDDED", name: "Psychiatry (Medication Management)" },
+        // { id: "EMBEDDED", name: "Psychiatry (Medication Management)" },
       ],
       appointmentTypeData: [
         { id: "in_office", name: "In-Person Therapy" },
@@ -212,13 +212,16 @@ const app = createApp({
         "Addiction (behavioral or substance)",
         "Anxiety/depression",
         "ADHD",
-        "DBT - Informed",
-        "DBT - Team",
+        "Body Image",
+        "Conflict Resolution",
         "EMDR",
-        "Grief",
-        "LGBTQIA (Gender and Sexual Identity)",
+        "Fertility, Pregnancy & Postpartum",
+        "Grief Counseling/Bereavement",
         "Life Changes",
-        "Self Harming/Suicidal Thoughts"
+        "LGBTQIA (Gender and Sexual Identity)",
+        "Men's concerns",
+        "Relationship Exploration",
+        "Women's Concerns"
       ],
 
       issuesForChildTherapy: [
@@ -269,14 +272,6 @@ const app = createApp({
 
       if (this.showAll) {
         return baseList;
-      }
-
-      if(this.selectedService == 'ADOLESCENT'){
-        return baseList.filter((issue) =>
-        this.issuesForChildTherapy.some((keyword) =>
-          issue.name.toLowerCase().includes(keyword.toLowerCase())
-        )
-      );
       }
 
       return baseList.filter((issue) =>
@@ -1667,6 +1662,7 @@ const app = createApp({
         start_range: startRange,
         primary_color: '007A2D',
         read_only: true,
+        state: 'texas'
       };
 
       const params = new URLSearchParams();
