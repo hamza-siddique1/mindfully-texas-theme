@@ -77,7 +77,7 @@ get_header();
     <!-- Step 6: Insurance Details (Formerly Step 5) -->
     <div class="mf-step mf-step-5" :class="{ 'mf-active': currentStepName === 'Client Info' }">
       <h2 class="mf-title">Client Details</h2>
-      <p class="mf-subtitle">Please provide your contact information with your accurate phone and email details.</p>
+      <p class="mf-subtitle">Please provide the correct client contact details.</p>
 
       <div class="mf-grid">
         <!-- Row 1: First Name, Last Name -->
