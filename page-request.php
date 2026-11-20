@@ -77,7 +77,8 @@ get_header();
     <!-- Step 6: Insurance Details (Formerly Step 5) -->
     <div class="mf-step mf-step-5" :class="{ 'mf-active': currentStepName === 'Client Info' }">
       <h2 class="mf-title">Client Details</h2>
-      <p class="mf-subtitle">Please provide the correct client contact details.</p>
+      <p class="mf-subtitle" v-if="isMinor">Please provide your child's name as well as your contact information.</p>
+      <p class="mf-subtitle" v-else>Please provide the correct client contact details.</p>
 
       <div class="mf-grid">
         <!-- Row 1: First Name, Last Name -->
@@ -86,7 +87,7 @@ get_header();
             <i class="fas fa-user mf-input-icon"></i>
             <input
               type="text"
-              placeholder="First Name *"
+              :placeholder="isMinor ? 'Client\'s First Name *' : 'First Name *'"
               required
               v-model="clientInfo.firstName"
             />
@@ -97,12 +98,38 @@ get_header();
             <i class="fas fa-user mf-input-icon"></i>
             <input
               type="text"
-              placeholder="Last Name *"
+              :placeholder="isMinor ? 'Client\'s Last Name *' : 'Last Name *'"
               required
               v-model="clientInfo.lastName"
             />
           </div>
         </div>
+
+        <!-- Row 1b (minors only): Parent/guardian First Name, Last Name -->
+        <template v-if="isMinor">
+          <div class="mf-input-field">
+            <div class="mf-input-wrapper">
+              <i class="fas fa-user mf-input-icon"></i>
+              <input
+                type="text"
+                placeholder="Your First Name *"
+                required
+                v-model="guardianInfo.firstName"
+              />
+            </div>
+          </div>
+          <div class="mf-input-field">
+            <div class="mf-input-wrapper">
+              <i class="fas fa-user mf-input-icon"></i>
+              <input
+                type="text"
+                placeholder="Your Last Name *"
+                required
+                v-model="guardianInfo.lastName"
+              />
+            </div>
+          </div>
+        </template>
 
                 <!-- Row 2: Email, Phone -->
         <div class="mf-input-field">
@@ -110,7 +137,7 @@ get_header();
             <i class="fas fa-envelope mf-input-icon"></i>
             <input
               type="email"
-              placeholder="Email *"
+              :placeholder="isMinor ? 'Your Email *' : 'Email *'"
               required
               autocomplete="email"
               v-model="email"
@@ -124,7 +151,7 @@ get_header();
             <input
               type="tel"
               inputmode="numeric"
-              placeholder="Phone Number *"
+              :placeholder="isMinor ? 'Your Phone *' : 'Phone Number *'"
               required
               maxlength="10"
               autocomplete="tel-national"

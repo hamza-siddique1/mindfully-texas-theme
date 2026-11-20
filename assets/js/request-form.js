@@ -156,6 +156,11 @@ const app = createApp({
         birthDate: '',
       },
       age: 0,
+      // Parent/guardian details, collected only when the client is under 18
+      guardianInfo: {
+        firstName: "",
+        lastName: "",
+      },
       fullNameManuallyEdited: false,
       clientInfoErrors: {},
       referral: {
@@ -254,6 +259,10 @@ const app = createApp({
 
     currentStepName() {
       return this.selectedSteps[this.currentStepIndex]?.name || "";
+    },
+
+    isMinor() {
+      return this.age < 18;
     },
 
     prevBtnDisabled() {
@@ -634,6 +643,12 @@ const app = createApp({
         time: this.getSlotDateTime(slot).time,
         clinician: (clinician?.name || '').split(',')[0].trim(),
 
+        // For minors, first_name/last_name above are the child's; email/phone are the parent/guardian's
+        ...(this.isMinor && {
+          guardian_first_name: this.guardianInfo.firstName.trim(),
+          guardian_last_name: this.guardianInfo.lastName.trim(),
+        }),
+
         ...({
           professional_referral: this.referral.isProfessional,
           referral_organization: this.referral.organization.trim(),
@@ -724,10 +739,19 @@ const app = createApp({
 
       const errors = {};
 
-      if (!this.clientInfo.firstName) errors.firstName = "First name is required.";
-      if (!this.clientInfo.lastName) errors.lastName = "Last name is required.";
-      if (!this.email) errors.email = "Email is required.";
-      if (!this.phoneNumber) errors.phone = "Phone number is required.";
+      if (this.isMinor) {
+        if (!this.clientInfo.firstName) errors.firstName = "Client's first name is required.";
+        if (!this.clientInfo.lastName) errors.lastName = "Client's last name is required.";
+        if (!this.guardianInfo.firstName.trim()) errors.guardianFirstName = "Your first name is required.";
+        if (!this.guardianInfo.lastName.trim()) errors.guardianLastName = "Your last name is required.";
+        if (!this.email) errors.email = "Your email is required.";
+        if (!this.phoneNumber) errors.phone = "Your phone number is required.";
+      } else {
+        if (!this.clientInfo.firstName) errors.firstName = "First name is required.";
+        if (!this.clientInfo.lastName) errors.lastName = "Last name is required.";
+        if (!this.email) errors.email = "Email is required.";
+        if (!this.phoneNumber) errors.phone = "Phone number is required.";
+      }
       // if (!this.clientInfo.insuredRelationship) errors.insuredRelationship = "Relationship to insured is required.";
       // if (!this.clientInfo.address1) errors.address1 = "Address 1 is required.";
       // if (!this.clientInfo.city) errors.city = "City is required.";
@@ -1654,6 +1678,9 @@ const app = createApp({
         last_name: this.clientInfo.lastName,
         email: this.email,
         phone_number: this.phoneNumber,
+        // Minors only; empty values are dropped by the params loop below
+        guardian_first_name: this.isMinor ? this.guardianInfo.firstName.trim() : '',
+        guardian_last_name: this.isMinor ? this.guardianInfo.lastName.trim() : '',
         provider_id: slot.healthieProviderId,
         appt_type_id: slot.appointmentTypeId,
         contact_type: contactType,
@@ -1694,4 +1721,3 @@ app.use(PrimeVue.Config, {
 app.component('p-search', PrimeVue.Select);
 
 app.mount('#app');
-
